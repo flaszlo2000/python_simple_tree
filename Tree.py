@@ -14,7 +14,7 @@ class Tree:
     def __str__(self) -> str:
         result = self.name
 
-        for i, connection in enumerate(self.connections):
+        for connection in self.connections:
             result += f"\n-{connection.name}"
 
             if len(connection.connections) > 0:
